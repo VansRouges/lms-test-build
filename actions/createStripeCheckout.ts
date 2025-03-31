@@ -57,6 +57,7 @@ export async function createStripeCheckout(courseId: string, userId: string) {
     }
 
     const { title, description, image, slug } = course;
+    console.log("course", course);
 
     if (!title || !description || !image || !slug) {
       throw new Error("Course data is incomplete");
