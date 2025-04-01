@@ -1,19 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: [
-    'https://3000-idx-lms-test-buildgit-1742818240593.cluster-y34ecccqenfhcuavp7vbnxv7zk.cloudworkstations.dev',
-    '*.local-origin.dev'
-  ],
+  /* config options here */
   images: {
     remotePatterns: [
       {
         hostname: "cdn.sanity.io",
         protocol: "https",
-      }
-    ]
-  }
-  // other config options can go here
+      },
+      {
+        hostname: "img.clerk.com",
+        protocol: "https",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
